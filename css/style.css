@@ -1,0 +1,25 @@
+* {
+  background-color: rgba(66, 31, 99, 0.795);
+}
+
+h1 {
+  background-color: rgba(84, 35, 131, 0.815);
+  font-size: 3em;
+  align-self: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+section {
+  margin: 10px;
+  color: rgb(129, 129, 129);
+}
+
+ul {
+  margin: 8px;
+  padding: auto;
+  list-style-type: square;
+  list-style-position: inside;
+}
