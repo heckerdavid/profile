@@ -4,15 +4,20 @@
 
 h1 {
   background-color: rgba(84, 35, 131, 0.815);
-  font-size: 3em;
-  align-self: center;
+  font-size: 68px;
+  height: 1.1em;
+  width: 6em;
+  margin: auto;
 }
 
 h2 {
   font-size: 2em;
+  padding: 10px;
+  margin: 10px;
 }
 
 section {
+  display: inline;
   margin: 10px;
   color: rgb(129, 129, 129);
 }
@@ -22,4 +27,14 @@ ul {
   padding: auto;
   list-style-type: square;
   list-style-position: inside;
+}
+
+li {
+  margin: 10px;
+}
+
+main {
+  display: inline-flex;
+  margin: 15px;
+
 }
