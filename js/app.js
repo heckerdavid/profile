@@ -106,7 +106,7 @@ while (flag && arrayGuess < 6) {
     directorGuess = prompt('Who do you think is one of my favorite movie directors?')
   }
 }
-
+alert('you could have guessed ' + directors + ' and been correct!')
 
 
 alert("Thank you for making it to the end! You got " + totalCorrect + "/7 questions right! Have a nice day " + userName + "!")
