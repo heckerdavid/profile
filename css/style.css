@@ -36,5 +36,13 @@ li {
 main {
   display: inline-flex;
   margin: 15px;
+}
 
+ol {
+  list-style-type: number;
+  list-style-position: inside;
+  color: rgb(177, 183, 189);
+  background-color: rgba(80, 80, 80, 0.911);
+  margin: auto;
+  padding: 10px;
 }
