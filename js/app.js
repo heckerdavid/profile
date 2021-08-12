@@ -5,17 +5,19 @@ let totalCorrect = 0;
 let userName = prompt("Hi! Welcome to my Code 201 week one project. What's your name??")
 alert("Hello there " + userName + ", lets get started with some more pop-up questions!")
 
-
-let likeColor = prompt("Do you think my favorite color is pink? (yes/no)")
-if (likeColor.toLowerCase() == "yes" || likeColor.toLowerCase() == "y") {
-  alert("Pink is cool, but I really like purple!")
-} else if (likeColor.toLowerCase() == "no" || likeColor.toLowerCase() == "n") {
-  alert("Good guess! My favorite color is actually purple")
-  totalCorrect++;
-} else {
-  alert("I only speak Yes's and No's so...let's just move on.")
+function favoriteColor(){
+  let likeColor = prompt("Do you think my favorite color is pink? (yes/no)")
+  if (likeColor.toLowerCase() == "yes" || likeColor.toLowerCase() == "y") {
+    alert("Pink is cool, but I really like purple!")
+  } else if (likeColor.toLowerCase() == "no" || likeColor.toLowerCase() == "n") {
+    alert("Good guess! My favorite color is actually purple")
+    totalCorrect++;
+  } else {
+    alert("I only speak Yes's and No's so...let's just move on.")
+  }
+  console.log(likeColor)
 }
-console.log(likeColor)
+favoriteColor()
 
 let likeHeights = prompt("Do you think I am scared of heights? (yes/no)")
 if (likeHeights.toLowerCase() == "yes" || likeHeights.toLowerCase() == "y") {
