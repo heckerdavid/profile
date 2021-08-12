@@ -19,17 +19,19 @@ function favoriteColor(){
 }
 favoriteColor()
 
-let likeHeights = prompt("Do you think I am scared of heights? (yes/no)")
-if (likeHeights.toLowerCase() == "yes" || likeHeights.toLowerCase() == "y") {
-  alert("Correct! I am terrified of heights.")
-  totalCorrect++;
-} else if (likeHeights.toLowerCase() == "no" || likeHeights.toLowerCase() == "n") {
-  alert("I wish. I am terrified of heights")
-} else {
-  alert("I only speak Yes's and No's so...let's just move on.")
+function fearOfHeights(){
+  let likeHeights = prompt("Do you think I am scared of heights? (yes/no)")
+  if (likeHeights.toLowerCase() == "yes" || likeHeights.toLowerCase() == "y") {
+    alert("Correct! I am terrified of heights.")
+    totalCorrect++;
+  } else if (likeHeights.toLowerCase() == "no" || likeHeights.toLowerCase() == "n") {
+    alert("I wish. I am terrified of heights")
+  } else {
+    alert("I only speak Yes's and No's so...let's just move on.")
+  }
+  console.log(likeHeights)
 }
-console.log(likeHeights)
-
+fearOfHeights()
 let likeCLimbing = prompt("Do you think I enjoy rock climbing? (yes/no)")
 if (likeCLimbing.toLowerCase() == "yes" || likeCLimbing.toLowerCase() == "y") {
   alert("Truth! Rock climbing is an awesome challenge and fantastic exercise")
