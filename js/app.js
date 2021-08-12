@@ -47,16 +47,19 @@ function rockClimbing(){
   }
 rockClimbing()
 
-let likeCode = prompt("Do you think I like JavaScript more than CSS? (yes/no)")
-if (likeCode.toLowerCase() == "yes" || likeCode.toLowerCase() == "y") {
-  alert("Heck yes I do! I appreciate the logical thought required for JS")
-  totalCorrect++;
-} else if (likeCode.toLowerCase() == "no" || likeCode.toLowerCase() == "n") {
-  alert("I have no style, so CSS is not for me.")
-} else {
-  alert("I only speak Yes's and No's so...let's just move on.")
+function programmer(){
+  let likeCode = prompt("Do you think I like JavaScript more than CSS? (yes/no)")
+  if (likeCode.toLowerCase() == "yes" || likeCode.toLowerCase() == "y") {
+    alert("Heck yes I do! I appreciate the logical thought required for JS")
+    totalCorrect++;
+  } else if (likeCode.toLowerCase() == "no" || likeCode.toLowerCase() == "n") {
+    alert("I have no style, so CSS is not for me.")
+  } else {
+    alert("I only speak Yes's and No's so...let's just move on.")
+  }
+  console.log(likeCode)
 }
-console.log(likeCode)
+programmer()
 
 let likeYesNo = prompt("Do you think I like yes or no questions? (yes/no)")
 if (likeYesNo.toLowerCase() == "yes" || likeYesNo.toLowerCase() == "y") {
