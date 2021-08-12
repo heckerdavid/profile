@@ -1,15 +1,19 @@
 * {
-  background-color: rgba(66, 31, 99, 0.795);
+  background-color: hsl(271, 50%, 33%);
 }
 
 h1 {
-  background-color: rgba(84, 35, 131, 0.815);
+  background-color: hsl(271, 50%, 33%);
   font-size: 68px;
   height: 1.1em;
   width: 6em;
   margin: auto;
+  position: sticky;
 }
 
+body {
+  background-color: hsl(0, 0%, 30%);
+}
 h2 {
   font-size: 2em;
   padding: 10px;
@@ -19,7 +23,8 @@ h2 {
 section {
   display: inline;
   margin: 10px;
-  color: rgb(129, 129, 129);
+  color: hsl(0, 0%, 70%);
+  border: 2px solid hsl(0, 0%, 70%);
 }
 
 ul {
@@ -31,6 +36,7 @@ ul {
 
 li {
   margin: 10px;
+  padding: .1em;
 }
 
 main {
@@ -39,10 +45,28 @@ main {
 }
 
 ol {
-  list-style-type: number;
+  list-style-type: none;
   list-style-position: inside;
-  color: rgb(177, 183, 189);
-  background-color: rgba(80, 80, 80, 0.911);
+  color: hsl(0, 0%, 70%);
+  background-color: hsl(0, 0%, 33%);
   margin: auto;
   padding: 10px;
+}
+
+p {
+  color: hsl(0, 0%, 70%);
+  padding: .5em;
+}
+
+ol li {
+  padding: 1em;
+  margin: 10px;
+  display: block;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+#topTen {
+  font-size: 2em;
+
 }
