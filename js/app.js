@@ -32,16 +32,20 @@ function fearOfHeights(){
   console.log(likeHeights)
 }
 fearOfHeights()
-let likeCLimbing = prompt("Do you think I enjoy rock climbing? (yes/no)")
-if (likeCLimbing.toLowerCase() == "yes" || likeCLimbing.toLowerCase() == "y") {
-  alert("Truth! Rock climbing is an awesome challenge and fantastic exercise")
-  totalCorrect++;
-} else if (likeCLimbing.toLowerCase() == "no" || likeCLimbing.toLowerCase() == "n") {
-  alert("Despite my fear of heights, I do infact love rock climbing!")
-} else {
-  alert("I only speak Yes's and No's so...let's just move on.")
-}
-console.log(likeCLimbing)
+
+function rockClimbing(){
+  let likeCLimbing = prompt("Do you think I enjoy rock climbing? (yes/no)")
+  if (likeCLimbing.toLowerCase() == "yes" || likeCLimbing.toLowerCase() == "y") {
+    alert("Truth! Rock climbing is an awesome challenge and fantastic exercise")
+    totalCorrect++;
+  } else if (likeCLimbing.toLowerCase() == "no" || likeCLimbing.toLowerCase() == "n") {
+    alert("Despite my fear of heights, I do infact love rock climbing!")
+  } else {
+    alert("I only speak Yes's and No's so...let's just move on.")
+  }
+  console.log(likeCLimbing)
+  }
+rockClimbing()
 
 let likeCode = prompt("Do you think I like JavaScript more than CSS? (yes/no)")
 if (likeCode.toLowerCase() == "yes" || likeCode.toLowerCase() == "y") {
