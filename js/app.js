@@ -104,26 +104,29 @@ randomNumber()
 
 // guess from an array game
 
-let directors = ['quinten tarantino', 'ridley scott', 'martin scorsese', 'david fincher', 'clint eastwood', 'steven spielberg', 'george lucas', 'alfred hitchcock', 'christopher nolan', 'guy ritchie']
-let directorGuess = prompt('Who do you think is one of my favorite movie directors?')
-let flag = true
-let arrayGuess = 0
-while (flag && arrayGuess < 6) {
-  console.log('started while loop')
-  for (let i = 0; i < directors.length; i++) {
-    if (directors[i] == directorGuess.toLowerCase()) {
-      alert('FANTASTIC Guess!! I love ' + directorGuess)
-      totalCorrect++;
-      flag = false
+function filmDirectors(){
+  let directors = ['quinten tarantino', 'ridley scott', 'martin scorsese', 'david fincher', 'clint eastwood', 'steven spielberg', 'george lucas', 'alfred hitchcock', 'christopher nolan', 'guy ritchie']
+  let directorGuess = prompt('Who do you think is one of my favorite movie directors?')
+  let flag = true
+  let arrayGuess = 0
+  while (flag && arrayGuess < 6) {
+    console.log('started while loop')
+    for (let i = 0; i < directors.length; i++) {
+      if (directors[i] == directorGuess.toLowerCase()) {
+        alert('FANTASTIC Guess!! I love ' + directorGuess)
+        totalCorrect++;
+        flag = false
+      }
+    }
+    if (flag) {
+      arrayGuess++;
+      alert('Nope! I am not really into ' + directorGuess + '. Try again! You have ' + (6 - arrayGuess) + ' guesses left')
+      directorGuess = prompt('Who do you think is one of my favorite movie directors?')
     }
   }
-  if (flag) {
-    arrayGuess++;
-    alert('Nope! I am not really into ' + directorGuess + '. Try again! You have ' + (6 - arrayGuess) + ' guesses left')
-    directorGuess = prompt('Who do you think is one of my favorite movie directors?')
-  }
+  alert('you could have guessed ' + directors + ' and been correct!')
 }
-alert('you could have guessed ' + directors + ' and been correct!')
+filmDirectors()
 
 
 alert("Thank you for making it to the end! You got " + totalCorrect + "/7 questions right! Have a nice day " + userName + "!")
