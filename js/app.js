@@ -78,26 +78,29 @@ goNoGo()
 
 // number guessing game
 
-let userGuess = parseInt(prompt('Pick a number between 1 & 10'));
-let correctNumber = Math.floor(Math.random() * 10);
-let attempts = 0;
-while ((userGuess !== correctNumber) && (attempts < 4)) {
-  let remainingTrys = 4 - attempts
-  if (userGuess > correctNumber) {
-    alert('Too High! Try again.');
-    userGuess = prompt('pick a number between 1 & 10 you have ' + remainingTrys + ' tries left.');
-    attempts++;
-  } else if (userGuess < correctNumber) {
-    alert('Too low! Try again.');
-    userGuess = prompt('pick a number between 1 & 10 ' + remainingTrys + ' tries left.');
-    attempts++;
-  } else {
-    alert('Dang! Nice Guess! The correct answer WAS ' + correctNumber + '!!')
-    totalCorrect++;
-    break;
+function randomNumber(){
+  let userGuess = parseInt(prompt('Pick a number between 1 & 10'));
+  let correctNumber = Math.floor(Math.random() * 10);
+  let attempts = 0;
+  while ((userGuess !== correctNumber) && (attempts < 4)) {
+    let remainingTrys = 4 - attempts
+    if (userGuess > correctNumber) {
+      alert('Too High! Try again.');
+      userGuess = prompt('pick a number between 1 & 10 you have ' + remainingTrys + ' tries left.');
+      attempts++;
+    } else if (userGuess < correctNumber) {
+      alert('Too low! Try again.');
+      userGuess = prompt('pick a number between 1 & 10 ' + remainingTrys + ' tries left.');
+      attempts++;
+    } else {
+      alert('Dang! Nice Guess! The correct answer WAS ' + correctNumber + '!!')
+      totalCorrect++;
+      break;
+    }
   }
-}
-alert('Nice guesses ' + userName + "! The correct answer was " + correctNumber);
+  alert('Nice guesses ' + userName + "! The correct answer was " + correctNumber);
+  }
+randomNumber()
 
 // guess from an array game
 
