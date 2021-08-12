@@ -61,16 +61,19 @@ function programmer(){
 }
 programmer()
 
-let likeYesNo = prompt("Do you think I like yes or no questions? (yes/no)")
-if (likeYesNo.toLowerCase() == "yes" || likeYesNo.toLowerCase() == "y") {
-  alert("nah, they're too absolute.")
-} else if (likeYesNo.toLowerCase() == "no" || likeYesNo.toLowerCase() == "n") {
-  alert("yeah, they're not great for getting to know someone.")
-  totalCorrect++;
-} else {
-  alert("I only speak Yes's and No's so...let's just move on.")
-}
-console.log(likeYesNo)
+function goNoGo(){
+  let likeYesNo = prompt("Do you think I like yes or no questions? (yes/no)")
+  if (likeYesNo.toLowerCase() == "yes" || likeYesNo.toLowerCase() == "y") {
+    alert("nah, they're too absolute.")
+  } else if (likeYesNo.toLowerCase() == "no" || likeYesNo.toLowerCase() == "n") {
+    alert("yeah, they're not great for getting to know someone.")
+    totalCorrect++;
+  } else {
+    alert("I only speak Yes's and No's so...let's just move on.")
+  }
+  console.log(likeYesNo)
+  }
+goNoGo()
 
 
 // number guessing game
