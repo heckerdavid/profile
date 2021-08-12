@@ -27,9 +27,12 @@ section {
   border: 2px solid hsl(0, 0%, 70%);
 }
 
+section:hover, p:hover{
+  color: hsl(272, 28%, 87%);
+}
 ul {
   margin: 8px;
-  padding: auto;
+  padding: 8px;
   list-style-type: square;
   list-style-position: inside;
 }
@@ -44,12 +47,16 @@ main {
   margin: 15px;
 }
 
+footer {
+  margin-top: 15px;
+}
+
 ol {
-  list-style-type: none;
+  list-style-type: decimal;
   list-style-position: inside;
   color: hsl(0, 0%, 70%);
   background-color: hsl(0, 0%, 33%);
-  margin: auto;
+  margin: 11px; 
   padding: 10px;
 }
 
@@ -61,12 +68,33 @@ p {
 ol li {
   padding: 1em;
   margin: 10px;
-  display: block;
-  list-style-type: none;
+  /* display: block; */
+  list-style-type: decimal;
   list-style-position: inside;
 }
 
 #topTen {
   font-size: 2em;
 
+}
+
+.button {
+  padding: 5px;
+  margin: 10px;
+  height: 50px;
+  font-size: 1.1em;
+  background-color: hsl(271, 50%, 33%);
+  color: hsl(0, 0%, 70%);
+  
+}
+.button:hover {
+  background-color: hsl(0, 0%, 70%);
+  transition-duration: 0.3s;
+  color: hsl(271, 50%, 33%);
+}
+
+#score {
+  background-color: hsl(0, 0%, 70%);
+  color: hsl(271, 50%, 33%);
+  float: left;
 }
