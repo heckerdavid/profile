@@ -1,6 +1,6 @@
-* {
+/* * {
   background-color: hsl(271, 50%, 33%);
-}
+} */
 
 h1 {
   background-color: hsl(271, 50%, 33%);
@@ -25,10 +25,12 @@ section {
   margin: 10px;
   color: hsl(0, 0%, 70%);
   border: 2px solid hsl(0, 0%, 70%);
+  background-color: hsl(271, 50%, 33%);
 }
 
 section:hover, p:hover{
   color: hsl(272, 28%, 87%);
+  border-radius: 10px 100px;
 }
 ul {
   margin: 8px;
@@ -45,10 +47,13 @@ li {
 main {
   display: inline-flex;
   margin: 15px;
+  
 }
 
 footer {
   margin-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
 ol {
@@ -71,10 +76,17 @@ ol li {
   /* display: block; */
   list-style-type: decimal;
   list-style-position: inside;
+  background-color: hsl(271, 50%, 33%);
+  border-radius:9px 80px ;
+  width: 20%;
+  margin-left: 5em;
 }
 
 #topTen {
   font-size: 2em;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  color: hsl(272, 28%, 70%);
 
 }
 
@@ -96,7 +108,19 @@ ol li {
 #score {
   background-color: hsl(0, 0%, 70%);
   color: hsl(271, 50%, 33%);
-  float: left;
+  display: inline;
+  position: relative;
+  left: 290px;
+  bottom: 1.5em;
+  border-radius: 100px 100px;
+}
+
+#scoreID {
+  background-color: hsl(271, 50%, 33%);
+  padding: 11px;
+  border-radius: 10px 100px;
+  width: 25%;
+  margin-left: 5em;
 }
 
 a {
@@ -107,4 +131,9 @@ a {
 a:hover {
   text-decoration: underline;
   color: hsl(272, 28%, 87%);
+}
+
+#david {
+  border-radius: 10px 100px;
+  padding: 20px;
 }
