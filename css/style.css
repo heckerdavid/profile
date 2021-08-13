@@ -80,7 +80,7 @@ ol li {
   list-style-position: inside;
   background-color: hsl(271, 50%, 33%);
   border-radius:9px 80px ;
-  width: 20%;
+  width: 10%;
   margin-left: 5em;
 }
 
@@ -121,7 +121,7 @@ ol li {
   background-color: hsl(271, 50%, 33%);
   padding: 11px;
   border-radius: 10px 100px;
-  width: 25%;
+  width: 12%;
   margin-left: 5em;
 }
 
