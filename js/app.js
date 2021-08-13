@@ -5,16 +5,37 @@ let userName = prompt("Hi! Welcome to my Code 201 week one project. What's your 
 alert("Hello there " + userName + ", checkout the bottom of my page for questions! correct answers will increase your score!")
 
 // array of yes/no questions
-let questionList = ['Do you think my favorite color is pink? (yes/no)', 'Do you think I am scared of heights? (yes/no)', 'Do you think I enjoy rock climbing? (yes/no)', 'Do you think I like JavaScript more than CSS? (yes/no)', 'Do you think I like yes or no questions? (yes/no)']
+let questionList = [
+'Do you think my favorite color is pink? (yes/no)', 
+'Do you think I am scared of heights? (yes/no)', 
+'Do you think I enjoy rock climbing? (yes/no)', 
+'Do you think I like JavaScript more than CSS? (yes/no)', 
+'Do you think I like yes or no questions? (yes/no)'
+]
 
 // array of acceptable answer choices
 let answerList = ['yes', 'y', 'no', 'n']
 
 // array of feedback based on user choice, indexed with invalid input then by question associated, valid inputs are in [yes, no] response order
-let feedBack = ['I only speak Yess and Nos so...lets just move on.', ['Pink is cool, but I really like purple!', 'Good guess! My favorite color is actually purple. Score +1'],['Correct! I am terrified of heights. Score +1', 'I wish. I am terrified of heights',], ['Truth! Rock climbing is an awesome challenge and fantastic exercise. Score +1','Despite my fear of heights, I do infact love rock climbing!'], ['Heck yes I do! I appreciate the logical thought required for JS. Score +1','I have no style, so CSS is not for me.'], [ 'nah, theyre too absolute.', 'yeah, theyre not great for getting to know someone. Score +1',]]
+let feedBack = [
+  // invalid input feedback
+  'I only speak Yess and Nos so...lets just move on.', 
+  ['Pink is cool, but I really like purple!', 'Good guess! My favorite color is actually purple. Score +1'],
+  ['Correct! I am terrified of heights. Score +1', 'I wish. I am terrified of heights',], 
+  ['Truth! Rock climbing is an awesome challenge and fantastic exercise. Score +1','Despite my fear of heights, I do infact love rock climbing!'], 
+  ['Heck yes I do! I appreciate the logical thought required for JS. Score +1','I have no style, so CSS is not for me.'], 
+  ['Nah, theyre too absolute.', 'yeah, theyre not great for getting to know someone. Score +1',]
+]
 
 // array for calling the incrementScore function
-let flagList = [['no', 'n'], ['yes', 'y'], ['yes', 'y'], ['yes', 'y'], ['no', 'n']]
+// TODO>>>>>> merge this with answerList 
+let flagList = [
+  ['no', 'n'], 
+  ['yes', 'y'], 
+  ['yes', 'y'], 
+  ['yes', 'y'], 
+  ['no', 'n']
+]
 
 //uses questionList, answerList, feedBack, and flagList to prompt questions, accept answers, give feedback based on the answer, and icrement score if the answer is correct
 function questionLoop(n=undefined) {
