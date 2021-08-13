@@ -98,3 +98,13 @@ ol li {
   color: hsl(271, 50%, 33%);
   float: left;
 }
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 70%);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: hsl(272, 28%, 87%);
+}
