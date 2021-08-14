@@ -155,8 +155,23 @@ a:hover {
   bottom: 200px;
   height: 300px;
 }
+#test:hover + .test2 {
+  display: block;
+  position: absolute;
+}
+
+.test2 {
+  background-color: hsl(271, 50%, 33%);
+  color: hsl(272, 28%, 87%);
+  border-radius: 10px 100px;
+  padding: 1em;
+}
 
 .test img {
   height: 700px;
   border-radius: 25px 250px;
+}
+
+#film {
+  width: 1em;
 }
