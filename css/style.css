@@ -93,12 +93,15 @@ ol li {
 }
 
 .button {
-  padding: 5px;
+  padding: 15px;
   margin: 10px;
-  height: 50px;
+  /* height: 50px; */
   font-size: 1.1em;
   background-color: hsl(271, 50%, 33%);
   color: hsl(0, 0%, 70%);
+  border-radius: 12px 100px;
+  border-color: hsl(0, 0%, 70%);
+  border-style: solid;
   
 }
 .button:hover {
