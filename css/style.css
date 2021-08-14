@@ -158,4 +158,5 @@ a:hover {
 
 .test img {
   height: 700px;
+  border-radius: 25px 250px;
 }
