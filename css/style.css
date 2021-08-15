@@ -147,17 +147,13 @@ a:hover {
   padding: 20px;
   display: none;
 }
-  
+
 #test:hover + .test {
   display: inline;
   position: absolute;
-  left: 500px;
-  bottom: 200px;
-  height: 300px;
-}
-#test:hover + .test2 {
-  display: block;
-  position: absolute;
+  left: 28%;
+  bottom: 60px;
+  height: 10em;
 }
 
 .test2 {
@@ -165,6 +161,8 @@ a:hover {
   color: hsl(272, 28%, 87%);
   border-radius: 10px 100px;
   padding: 1em;
+  display: block;
+  width: auto;
 }
 
 .test img {
